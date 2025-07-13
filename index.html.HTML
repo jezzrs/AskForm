@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AskForm</title>
+  </head>
+  <body>
+    <header class="header-container" id="header-container">
+      <h1>AskForm</h1>
+      <h3>Where your questions get answers</h3>
+      <label
+        ><input type="checkbox" class="theme-toggle" id="theme-toggle" />
+        <span class="slider" id="slider"></span>
+      </label>
+    </header>
+    <div class="main-container" id="main-container">
+      <div class="questions-container" id="questions-container">
+        <div class="collapsed-input" id="collapsed-input">
+          <textarea
+            id="questions-text-area"
+            class="questions-text-area"
+            maxlength="200"
+            placeholder="Type your question..."
+          ></textarea>
+        </div>
+        <div class="form-row">
+          <select class="emoji-picker" id="emoji-picker">
+            <option value=""></option>
+            <option value="😊">😊</option>
+            <option value="😂">😂</option>
+            <option value="😢">😢</option>
+            <option value="🎉">🎉</option>
+            <option value="👍">👍</option>
+            <option value="🩷">🩷</option>
+          </select>
+          <br /><span id="textCount">200</span>
+        </div>
+        <input
+          type="text"
+          class="name-field"
+          id="name-field"
+          placeholder="Your name (Optional)"
+        />
+        <input
+          type="submit"
+          class="submit-button"
+          id="submit-button"
+          value="Send"
+        />
+      </div>
+
+      <div class="asked-questions" id="asked-questions">
+        <h3>Questions</h3>
+        <button class="delete-all" id="delete-all">Delete</button>
+        <div class="asked-questions-space" id="asked-questions-space"></div>
+      </div>
+    </div>
+  </body>
+</html>
